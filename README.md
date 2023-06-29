@@ -1,16 +1,18 @@
 # Restaurant-app
 
-<p>Simple restaurant web app</p>
+Simple restaurant web app
 <br><br>
 Type in the console to run the application:
 <br>
-php artisan migrate
-php artisan storage:link
+- php artisan migrate<br>
+- php artisan storage:link<br>
+- php artisan serve<br>
+- npm run dev
 <br>
-Admin panel - /login
+Admin panel - /login<br>
 Mail: admin@mail.com<br>
 Password: password
-
+<br><br>
 <a href="https://same616.gumroad.com/l/ehghk">Tailwind Template</a>
 
 ## Possibilities
