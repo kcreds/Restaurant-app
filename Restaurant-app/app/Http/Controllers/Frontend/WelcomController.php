@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category;
+use App\Models\Order;
+use App\Models\Reservation;
 use Illuminate\Http\Request;
 
 class WelcomController extends Controller
@@ -15,8 +17,15 @@ class WelcomController extends Controller
         return view('welcome', compact('specials'));
     }
 
-    public function success()
+    public function reservationSuccess()
     {
-        return view('success');
+        $reservation = Reservation::latest()->first();
+        return view('success', compact('reservation'));
+    }
+
+    public function orderSuccess()
+    {
+        $order = Order::latest()->first();
+        return view('success', compact('order'));
     }
 }

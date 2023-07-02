@@ -19,6 +19,7 @@ Password: password
 <ul>
   <li>CRUD - categories, menus, tables, reservations in admin panel</li>
   <li>The possibility of booking a table by guests</li>
+  <li>The possibility to place an order online by guests</li>
 </ul>
 
 
@@ -34,5 +35,7 @@ Password: password
 ![4](https://github.com/kcreds/Restaurant-app/blob/main/Screen/5.png?raw=true)
 
 ![5](https://github.com/kcreds/Restaurant-app/blob/main/Screen/4.png?raw=true)
+
+![6](https://github.com/kcreds/Restaurant-app/blob/main/Screen/6.png?raw=true)
 
  

@@ -23,6 +23,9 @@ class ReservationController extends Controller
 
     public function stepTwo(Request $request)
     {
+        if (empty($request->session()->get('reservation'))) {
+            return redirect()->route('reservations.step.one');
+        }
         $reservation = $request->session()->get('reservation');
         $reservation_table_id = Reservation::orderBy('reservation_date')->get()->filter(function ($value) use ($reservation) {
             return $value->reservation_date->format('Y-m-d') == $reservation->reservation_date->format('Y-m-d');

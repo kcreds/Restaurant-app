@@ -5,18 +5,23 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Menu extends Model
+class Order extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'description', 'image', 'price'];
+    protected $fillable = [
+        'first_name',
+        'last_name',
+        'email',
+        'phone_number',
+        'street',
+        'city',
+        'post_code',
+        'order_price',
+    ];
 
-    public function categories()
-    {
-        return $this->belongsToMany(Category::class, 'category_menu');
-    }
 
-    public function order()
+    public function menu()
     {
         return $this->belongsToMany(Menu::class, 'order_product')->withPivot('quantity');
     }

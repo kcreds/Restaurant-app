@@ -54,6 +54,8 @@
                     href="{{ route('menus.index') }}">Our Menu</a>
                 <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
                     href="{{ route('reservations.step.one') }}">Make Reservation</a>
+                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
+                    href="{{ route('orders.step.one') }}">Make Order</a>
 
             </div>
         </nav>
@@ -89,7 +91,8 @@
                 <a class="ml-3">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                         stroke-width="2" class="w-6 h-6 text-pink-400" viewBox="0 0 24 24">
-                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5">
+                        </rect>
                         <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
                     </svg>
                 </a>
