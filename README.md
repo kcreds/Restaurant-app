@@ -36,6 +36,6 @@ Password: password
 
 ![5](https://github.com/kcreds/Restaurant-app/blob/main/Screen/4.png?raw=true)
 
-![6](https://github.com/kcreds/Restaurant-app/blob/main/Screen/6.png?raw=true)
+![6](https://github.com/kcreds/Restaurant-app/blob/main/Screen/6.JPG?raw=true)
 
  
