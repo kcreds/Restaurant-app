@@ -5,6 +5,7 @@ Simple restaurant web app
 Type in the console to run the application:
 <br>
 - php artisan migrate<br>
+- php artisan db:seed<br>
 - php artisan storage:link<br>
 - php artisan serve<br>
 - npm run dev
