@@ -13,8 +13,8 @@ class WelcomController extends Controller
     public function index()
     {
         $specials = Category::where('name', 'specials')->first();
-
         return view('welcome', compact('specials'));
+        
     }
 
     public function reservationSuccess()

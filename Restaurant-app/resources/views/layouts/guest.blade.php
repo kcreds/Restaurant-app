@@ -23,47 +23,54 @@
 
 <body>
     <div class="bg-white shadow-md" x-data="{ isOpen: false }">
-        <nav class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center">
-            <div class="flex items-center justify-between">
-                <a class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 md:text-2xl hover:text-green-400"
-                    href="/">
-                    TailFood
+        <nav class="bg-white border-gray-200 dark:bg-emerald-900"> 
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="/" class="flex items-center">
+                    <span class="self-center text-3xl font-bold whitespace-nowrap dark:text-rose-300">LaraRestaurant</span>
                 </a>
-                <!-- Mobile menu button -->
-                <div @click="isOpen = !isOpen" class="flex md:hidden">
-                    <button type="button"
-                        class="text-gray-800 hover:text-gray-400 focus:outline-none focus:text-gray-400"
-                        aria-label="toggle menu">
-                        <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
-                            <path fill-rule="evenodd"
-                                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
-                            </path>
-                        </svg>
-                    </button>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-emerald-900 dark:focus:ring-emerald-600"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-emerald-900 md:dark:bg-emerald-900 dark:border-gray-700">
+                        <li>
+                            <a class="text-transparent bg-clip-text font-bold dark:text-rose-300 hover:text-green-400"
+                                href="/">Home</a>
+                        </li>
+                        <li>
+                            <a class="text-transparent font-bold dark:text-rose-300 hover:text-green-400"
+                                href="{{ route('categories.index') }}">Categories</a>
+                        </li>
+                        <li>
+                            <a class="text-transparent font-bold  dark:text-rose-300 hover:text-green-400"
+                                href="{{ route('menus.index') }}">Our Menu</a>
+                        </li>
+                        <li>
+                            <a class="text-transparent font-bold bg-clip-text dark:text-rose-300 hover:text-green-400"
+                                href="{{ route('reservations.step.one') }}">Make Reservation</a>
+                        </li>
+                        <li>
+                            <a class="text-transparent font-bold bg-clip-text dark:text-rose-300 hover:text-green-400"
+                                href="{{ route('orders.step.one') }}">Make Order</a>
+                        </li>
+
+                    </ul>
                 </div>
-            </div>
-
-            <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-            <div :class="isOpen ? 'flex' : 'hidden'"
-                class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0">
-                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
-                    href="/">Home</a>
-                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
-                    href="{{ route('categories.index') }}">Categories</a>
-                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
-                    href="{{ route('menus.index') }}">Our Menu</a>
-                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
-                    href="{{ route('reservations.step.one') }}">Make Reservation</a>
-                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
-                    href="{{ route('orders.step.one') }}">Make Order</a>
-
-            </div>
-        </nav>
+              </div>
+            </nav>
     </div>
     <div class="font-sans text-gray-900 antialiased min-h-screen">
         {{ $slot }}
     </div>
-    <footer class="bg-gray-800 border-t border-gray-200">
+    <footer class="bg-emerald-900 border-t border-gray-200">
         <div class="container flex flex-wrap items-center justify-center px-4 py-8 mx-auto lg:justify-between">
             <div class="flex flex-wrap justify-center">
                 <ul class="flex items-center space-x-4 text-white">

@@ -94,7 +94,7 @@ class MenuController extends Controller
             $menu->categories()->sync($request->categories);
         }
         
-        return to_route('admin.menus.index')->with('success', 'Menu updated successfuly');
+        return to_route('admin.menus.index')->with('success', 'Menu updated successfully');
     }
 
     /**
@@ -105,6 +105,6 @@ class MenuController extends Controller
         Storage::delete($menu->image);
         $menu->delete();
 
-        return to_route('admin.menus.index')->with('danger', 'Menu deleted successfuly');
+        return to_route('admin.menus.index')->with('danger', 'Menu deleted successfully');
     }
 }
