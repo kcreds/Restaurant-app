@@ -20,7 +20,7 @@ Unit Tests
 <br>
 tests/Unit
 
-![6](https://github.com/kcreds/Restaurant-app/blob/main/Screen/tests.JPG?raw=true)
+![6](https://raw.githubusercontent.com/kcreds/Restaurant-app/main/Screen/tests.PNG)
 
 ## Possibilities
 <ul>
