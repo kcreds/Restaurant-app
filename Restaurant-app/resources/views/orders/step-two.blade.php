@@ -10,11 +10,11 @@
                     </div>
                     <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
                         <div class="w-full">
-                            <h3 class="mb-4 text-xl font-bold text-blue-600">Make Order</h3>
+                            <h3 class="mb-4 text-2xl font-bold text-rose-300">Make Order</h3>
 
                             <div class="w-full bg-gray-200 rounded-full">
                                 <div
-                                    class="w-100 p-1 text-xs font-medium leading-none text-center text-blue-100 bg-blue-600 rounded-full">
+                                    class="w-100 p-1 text-xs font-medium leading-none text-center text-rose-300 bg-emerald-900 rounded-full">
                                     Step 2</div>
                             </div>
                             <form method="POST" action="{{ route('orders.store.step.two') }}">
@@ -24,7 +24,7 @@
                                         Products</label>
                                     <div class="mt-1">
                                         <div class="relative">
-                                            <select name="selected_products[]" id="selected_products" multiple
+                                            <select required name="selected_products[]" id="selected_products" multiple
                                                 class="block appearance-none w-full bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-700 focus:border-indigo-700 p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-indigo-700 dark:focus:border-indigo-700">
                                                 @foreach ($products as $product)
                                                     <option value="{{ $product->id }}">{{ $product->name }} -
@@ -54,9 +54,9 @@
 
                                 <div class="mt-6 p-4 flex justify-between space-x-3">
                                     <a href="{{ route('orders.step.one') }}"
-                                        class="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 rounded-lg text-white">Back</a>
+                                        class="px-4 py-2 font-bold bg-emerald-900 hover:bg-emerald-700 rounded-lg text-rose-300">Back</a>
                                     <button type="submit"
-                                        class="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 rounded-lg text-white">Pay</button>
+                                        class="px-4 py-2 font-bold bg-emerald-900 hover:bg-emerald-700 rounded-lg text-rose-300">Pay</button>
                                 </div>
                             </form>
                         </div>

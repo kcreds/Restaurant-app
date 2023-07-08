@@ -14,11 +14,11 @@
         <div class="flex flex-col items-center mt-12 text-center">
             <span class="relative inline-flex w-full md:w-1/4">
                 <a href="{{ route('reservations.step.one') }}" type="button"
-                    class="inline-flex items-center whitespace-nowrap justify-center px-6 py-4 text-lg font-bold leading-6 text-rose-300 bg-emerald-900 rounded-full lg:w-full md:w-auto hover:bg-green-600 focus:outline-none">
+                    class="inline-flex underline hover:text-emerald-700 items-center whitespace-nowrap justify-center px-6 py-4 text-lg font-bold leading-6 text-rose-300 bg-emerald-900 rounded-full lg:w-full md:w-auto hover:bg-rose-300 focus:outline-none">
                     Make your Reservation
                 </a>
                 <a href="{{ route('orders.step.one') }}" type="button"
-                    class="inline-flex ml-3 items-center whitespace-nowrap justify-center px-6 py-4 text-lg font-bold leading-6 text-rose-300 bg-emerald-900 rounded-full lg:w-full md:w-auto hover:bg-green-600 focus:outline-none">
+                    class="inline-flex underline hover:text-emerald-700 ml-3 items-center whitespace-nowrap justify-center px-6 py-4 text-lg font-bold leading-6 text-rose-300 bg-emerald-900 rounded-full lg:w-full md:w-auto hover:bg-rose-300 focus:outline-none">
                     Make your Order
                 </a>
             </span>

@@ -9,11 +9,11 @@
                     </div>
                     <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
                         <div class="w-full">
-                            <h3 class="mb-4 text-xl font-bold text-blue-600">Make Order</h3>
+                            <h3 class="mb-4 text-2xl font-bold text-rose-300">Make Order</h3>
 
                             <div class="w-full bg-gray-200 rounded-full">
                                 <div
-                                    class="w-40 p-1 text-xs font-medium leading-none text-center text-blue-100 bg-blue-600 rounded-full">
+                                    class="w-48 p-1 text-xs font-medium leading-none text-center text-rose-300 bg-emerald-900 rounded-full">
                                     Step1</div>
                             </div>
 
@@ -106,7 +106,7 @@
                                 </div>
                                 <div class="mt-6 p-4 flex justify-end">
                                     <button type="submit"
-                                        class="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 rounded-lg text-white">Next</button>
+                                        class="px-4 py-2 font-bold bg-emerald-900 hover:bg-emerald-700 rounded-lg text-rose-300">Next Step</button>
                                 </div>
                             </form>
                         </div>

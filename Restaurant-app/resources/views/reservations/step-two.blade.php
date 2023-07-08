@@ -1,7 +1,7 @@
 <x-guest-layout>
     <div class="container w-full px-5 py-6 mx-auto">
         <div class="flex items-center min-h-screen ">
-            <div class="flex-1 h-full max-w-4xl mx-auto bg-white rounded-lg shadow-xl">
+            <div class="flex-1 h-full max-w-4xl mx-auto bg-white rounded-lg shadow-xl shadow-emerald-900">
                 <div class="flex flex-col md:flex-row">
                     <div class="h-32 md:h-auto md:w-1/2">
                         <img class="object-cover w-full h-full"
@@ -9,18 +9,18 @@
                     </div>
                     <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
                         <div class="w-full">
-                            <h3 class="mb-4 text-xl font-bold text-blue-600">Make Reservation</h3>
+                            <h3 class="mb-4 text-2xl font-bold text-rose-300">Make Reservation</h3>
 
                             <div class="w-full bg-gray-200 rounded-full">
                                 <div
-                                    class="w-100 p-1 text-xs font-medium leading-none text-center text-blue-100 bg-blue-600 rounded-full">
+                                    class="w-100 p-1 text-xs font-medium leading-none text-center text-rose-300 bg-emerald-900 rounded-full">
                                     Step 2</div>
                             </div>
 
                             <form method="POST" action="{{ route('reservations.store.step.two') }}">
                                 @csrf
                                 <div class="sm:col-span-6 pt-5">
-                                    <label for="status" class="block text-sm font-medium">Table</label>
+                                    <label for="status" class="block text-sm font-medium"> Choose Table</label>
                                     <div class="mt-1">
                                         @if ($tables->isEmpty())
                                             <div class="text-sm text-red-400">Sorry, we don't have table for this
@@ -44,9 +44,9 @@
 
                                 <div class="mt-6 p-4 flex justify-between space-x-3">
                                     <a href="{{ route('reservations.step.one') }}"
-                                        class="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 rounded-lg text-white">Back</a>
+                                        class="px-4 py-2 font-bold bg-emerald-900 hover:bg-emerald-700 rounded-lg text-rose-300">Back</a>
                                     <button type="submit"
-                                        class="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 rounded-lg text-white">Make
+                                        class="px-4 py-2 font-bold bg-emerald-900 hover:bg-emerald-700 rounded-lg text-rose-300">Make
                                         Reservation</button>
                                 </div>
                             </form>

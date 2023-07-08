@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'LaraRestaurant') }}</title>
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
@@ -51,7 +51,7 @@
                         </li>
                         <li>
                             <a class="text-transparent font-bold  dark:text-rose-300 hover:text-green-400"
-                                href="{{ route('menus.index') }}">Our Menu</a>
+                                href="{{ route('menus.index') }}">Menu</a>
                         </li>
                         <li>
                             <a class="text-transparent font-bold bg-clip-text dark:text-rose-300 hover:text-green-400"
