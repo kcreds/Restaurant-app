@@ -15,10 +15,11 @@ Mail: admin@mail.com<br>
 Password: password
 <br><br>
 <a href="https://same616.gumroad.com/l/ehghk">Tailwind Template</a>
-<br>
+<br><br>
+
 ## Unit Tests
-tests/Unit
-<br>
+Location: tests/Unit
+
 ![7](https://raw.githubusercontent.com/kcreds/Restaurant-app/main/Screen/tests.PNG)
 
 ## Possibilities
