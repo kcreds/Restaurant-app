@@ -33,7 +33,6 @@ Location: tests/Unit
 ## Screenshots:camera:
 
  
-![1](https://github.com/kcreds/Restaurant-app/blob/main/Screen/1.png?raw=true)
 
 ![2](https://github.com/kcreds/Restaurant-app/blob/main/Screen/2.png?raw=true)
 
